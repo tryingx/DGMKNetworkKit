@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02DD2238761CE94A3F5936C2E14A7F74 /* MKNetworkEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 83D270413E2062624D370ED6311A7F26 /* MKNetworkEngine.h */; };
+		05F1E20DA9C5DA6C7CB248705A6D59F9 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D105E87B7F42CFB9B84AB2A345512AD7 /* Reachability.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		10E9A875D8267B54CC15F93A5A46B242 /* MKNetworkKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 577D709AF4621640D53A65274B88056B /* MKNetworkKit.h */; };
+		1A7D83B15F6DC0EF9D8A4680FF700D1C /* MKNetworkOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D1DC9D4CA954BA0718E2941297C27B /* MKNetworkOperation.h */; };
+		42B3F5CF5DC13B0770B20309720DAE7E /* MKNetworkEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = D12DE516AE213C061AA812E4FE6B800E /* MKNetworkEngine.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		43E9D203B103ACEC0E9F9D669D18AEDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3811A1ECE30883476F114E42572826EF /* Foundation.framework */; };
+		480CCBD7F119A06ED496A18FAFAC4404 /* MKNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B93DB7E2DAFD855DE8F0B4847DE3099D /* MKNetworkOperation.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		4EFC68CD07CC6C3D872174CC9BD1413B /* NSData+MKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2421AF87B1188AB75BA236E6712FBF /* NSData+MKBase64.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5866EEBD03F1CACACE198F202F9294BB /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 3301BB9AB22835A0370AB539F359B38B /* NSDate+RFC1123.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		59135DEF256440544658AE620A2051F8 /* NSString+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1525C44246515F0B7D161153560A61 /* NSString+MKNetworkKitAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7D1DBAA17405A1C291E3747AE7EDFC26 /* MKNetworkKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C7F51CE7CF65DC55CE6177328B32E82E /* MKNetworkKit-dummy.m */; };
+		82333542ED1C871EC3AFDC346F92D0D4 /* NSData+MKBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = FABD0A90B920248DFB6CCA81DC6796D1 /* NSData+MKBase64.h */; };
+		8D647B9F4ED7669474FF8F0723001C05 /* NSDate+RFC1123.h in Headers */ = {isa = PBXBuildFile; fileRef = 03C1260632C97A3243D388DBEC614127 /* NSDate+RFC1123.h */; };
+		8D8EE35CE9618B3E0619DC87E4E3FE6A /* NSString+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = A3260AE629920413BE58B6B10485CF57 /* NSString+MKNetworkKitAdditions.h */; };
+		9930C7DDAD17C7F56DDFCAC316F89E3C /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = F136FD8C750979A98D6312CE8ECA1506 /* Reachability.h */; };
+		9E0C0EF5CC6039A7C2CCB248B7CE42D0 /* NSDictionary+RequestEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 974E3B237EA2FA4219EE8ED96EBBD8DD /* NSDictionary+RequestEncoding.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AD7B08129B062956EC09EF8DDB9D7FC2 /* Reachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB0B3DE9DB7BBEA1465951F46F5D8C6 /* Reachability-dummy.m */; };
+		C0C9C52234736586FAA33861BBFCF56E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D714A09E6CE470618E6D23FAFFB2AA33 /* CFNetwork.framework */; };
+		C3ADC4D4489440F909BEA64E31708575 /* NSDictionary+RequestEncoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 236D07274085218A9B84183ACCB99ABC /* NSDictionary+RequestEncoding.h */; };
+		C82F033F250B2637F0C2B7BFA65B0036 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3811A1ECE30883476F114E42572826EF /* Foundation.framework */; };
+		CBF6AA520AD688C10F7DC2F68AD5EC93 /* UIAlertView+MKNetworkKitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D4D1AF73410E522C9F30D638222D1F1 /* UIAlertView+MKNetworkKitAdditions.h */; };
+		D59D0228EF3B966DA998A0586CB2CF88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3811A1ECE30883476F114E42572826EF /* Foundation.framework */; };
+		DA4168C29CF242C64CFE3490357ADE3A /* Pods-DGMKNetworkKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4418082FE5C52A228916A3FB29EAA20E /* Pods-DGMKNetworkKit-dummy.m */; };
+		E9A3EFDA08F79DD651E72FD1F20B9335 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30DA52C60D8B42F372B933D296828FD /* SystemConfiguration.framework */; };
+		F070017A6995F5CC79DC5CF14483E1BA /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F576E5742E43A9CCB8A5388D66D38E91 /* Security.framework */; };
+		FA56DF6BF54D4D5B71CE19673E5DF91C /* UIAlertView+MKNetworkKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F2FB00AF0F0B4B8DBFBB6C6366E2418 /* UIAlertView+MKNetworkKitAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E34B07ADDA4FCB5185AD18FAAB8EC57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1893DE70459B9C5430E1E53597BF9817;
+			remoteInfo = Reachability;
+		};
+		AEB19AE8E57BC96E2238C3C14D7294AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E23D12799CD9B249ACC2D375B90D499;
+			remoteInfo = MKNetworkKit;
+		};
+		F7F14E32CA020F4BA168C948C9E84FFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1893DE70459B9C5430E1E53597BF9817;
+			remoteInfo = Reachability;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03C1260632C97A3243D388DBEC614127 /* NSDate+RFC1123.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+RFC1123.h"; path = "MKNetworkKit/Categories/NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		09E39F9AF89A30C2B3CF2AAF91F90CA1 /* Pods-DGMKNetworkKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DGMKNetworkKit.release.xcconfig"; sourceTree = "<group>"; };
+		0D4D1AF73410E522C9F30D638222D1F1 /* UIAlertView+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+MKNetworkKitAdditions.h"; path = "MKNetworkKit/Categories/UIAlertView+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		12D1DC9D4CA954BA0718E2941297C27B /* MKNetworkOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKNetworkOperation.h; path = MKNetworkKit/MKNetworkOperation.h; sourceTree = "<group>"; };
+		236D07274085218A9B84183ACCB99ABC /* NSDictionary+RequestEncoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+RequestEncoding.h"; path = "MKNetworkKit/Categories/NSDictionary+RequestEncoding.h"; sourceTree = "<group>"; };
+		2DEC7319F57AA8851AD844925E1AF591 /* libMKNetworkKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMKNetworkKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3301BB9AB22835A0370AB539F359B38B /* NSDate+RFC1123.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+RFC1123.m"; path = "MKNetworkKit/Categories/NSDate+RFC1123.m"; sourceTree = "<group>"; };
+		3811A1ECE30883476F114E42572826EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3DB0B3DE9DB7BBEA1465951F46F5D8C6 /* Reachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reachability-dummy.m"; sourceTree = "<group>"; };
+		4418082FE5C52A228916A3FB29EAA20E /* Pods-DGMKNetworkKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DGMKNetworkKit-dummy.m"; sourceTree = "<group>"; };
+		47AA38904B6CA6BEAA9A05257CDA06F0 /* libPods-DGMKNetworkKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DGMKNetworkKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C569FE8289A1400A6476A239CF2C802 /* Reachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability-prefix.pch"; sourceTree = "<group>"; };
+		4F2FB00AF0F0B4B8DBFBB6C6366E2418 /* UIAlertView+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+MKNetworkKitAdditions.m"; path = "MKNetworkKit/Categories/UIAlertView+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		4FEFC97377867F5C341772426A08539E /* Pods-DGMKNetworkKit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DGMKNetworkKit-resources.sh"; sourceTree = "<group>"; };
+		56D43C16310B09DF4BA0F4E4D0353032 /* MKNetworkKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKNetworkKit.xcconfig; sourceTree = "<group>"; };
+		577D709AF4621640D53A65274B88056B /* MKNetworkKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKNetworkKit.h; path = MKNetworkKit/MKNetworkKit.h; sourceTree = "<group>"; };
+		6569601CFF094BF7A8C021D1F9AE8FDB /* libReachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReachability.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		68677442C397A413DB8B27E6DC4B1814 /* Pods-DGMKNetworkKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DGMKNetworkKit-acknowledgements.plist"; sourceTree = "<group>"; };
+		83D270413E2062624D370ED6311A7F26 /* MKNetworkEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MKNetworkEngine.h; path = MKNetworkKit/MKNetworkEngine.h; sourceTree = "<group>"; };
+		974E3B237EA2FA4219EE8ED96EBBD8DD /* NSDictionary+RequestEncoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+RequestEncoding.m"; path = "MKNetworkKit/Categories/NSDictionary+RequestEncoding.m"; sourceTree = "<group>"; };
+		9BD78563B28BC1F69F8309E9C10621C9 /* Pods-DGMKNetworkKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DGMKNetworkKit.debug.xcconfig"; sourceTree = "<group>"; };
+		9F2421AF87B1188AB75BA236E6712FBF /* NSData+MKBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+MKBase64.m"; path = "MKNetworkKit/Categories/NSData+MKBase64.m"; sourceTree = "<group>"; };
+		A1416A7D37574CA6D019DDD904B02619 /* Pods-DGMKNetworkKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DGMKNetworkKit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A2E689BA53FB9059BF9E6B63ADAB7DA6 /* MKNetworkKit-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MKNetworkKit-Private.xcconfig"; sourceTree = "<group>"; };
+		A3260AE629920413BE58B6B10485CF57 /* NSString+MKNetworkKitAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MKNetworkKitAdditions.h"; path = "MKNetworkKit/Categories/NSString+MKNetworkKitAdditions.h"; sourceTree = "<group>"; };
+		B93DB7E2DAFD855DE8F0B4847DE3099D /* MKNetworkOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKNetworkOperation.m; path = MKNetworkKit/MKNetworkOperation.m; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BF1525C44246515F0B7D161153560A61 /* NSString+MKNetworkKitAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MKNetworkKitAdditions.m"; path = "MKNetworkKit/Categories/NSString+MKNetworkKitAdditions.m"; sourceTree = "<group>"; };
+		C7DF016439F9C155E74A48D12B3CC4D2 /* MKNetworkKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKNetworkKit-prefix.pch"; sourceTree = "<group>"; };
+		C7F51CE7CF65DC55CE6177328B32E82E /* MKNetworkKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKNetworkKit-dummy.m"; sourceTree = "<group>"; };
+		D105E87B7F42CFB9B84AB2A345512AD7 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		D12DE516AE213C061AA812E4FE6B800E /* MKNetworkEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MKNetworkEngine.m; path = MKNetworkKit/MKNetworkEngine.m; sourceTree = "<group>"; };
+		D714A09E6CE470618E6D23FAFFB2AA33 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		F136FD8C750979A98D6312CE8ECA1506 /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		F30DA52C60D8B42F372B933D296828FD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		F576E5742E43A9CCB8A5388D66D38E91 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		F84957CEB839129E88D58047A4CF16C3 /* Reachability-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Reachability-Private.xcconfig"; sourceTree = "<group>"; };
+		F89A78BFEF564216FB652BA4B907F7E0 /* Reachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reachability.xcconfig; sourceTree = "<group>"; };
+		FABD0A90B920248DFB6CCA81DC6796D1 /* NSData+MKBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+MKBase64.h"; path = "MKNetworkKit/Categories/NSData+MKBase64.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		289E6C4B2B259C85F1B1444694F3DC49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D59D0228EF3B966DA998A0586CB2CF88 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58B3F7324AFAD05B7FADA4010404C89F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0C9C52234736586FAA33861BBFCF56E /* CFNetwork.framework in Frameworks */,
+				C82F033F250B2637F0C2B7BFA65B0036 /* Foundation.framework in Frameworks */,
+				F070017A6995F5CC79DC5CF14483E1BA /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91E7163BC7B028C8D2732B25DB0E0182 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E9D203B103ACEC0E9F9D669D18AEDA /* Foundation.framework in Frameworks */,
+				E9A3EFDA08F79DD651E72FD1F20B9335 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F7EF37882AB0FD26B8872B35D136093 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				56D43C16310B09DF4BA0F4E4D0353032 /* MKNetworkKit.xcconfig */,
+				A2E689BA53FB9059BF9E6B63ADAB7DA6 /* MKNetworkKit-Private.xcconfig */,
+				C7F51CE7CF65DC55CE6177328B32E82E /* MKNetworkKit-dummy.m */,
+				C7DF016439F9C155E74A48D12B3CC4D2 /* MKNetworkKit-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MKNetworkKit";
+			sourceTree = "<group>";
+		};
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3F965ECCBF10B69E9313EF2EA1CC3F7 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27F23FFDCC4A4A06E7C44915267ABA4E /* MKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				83D270413E2062624D370ED6311A7F26 /* MKNetworkEngine.h */,
+				D12DE516AE213C061AA812E4FE6B800E /* MKNetworkEngine.m */,
+				577D709AF4621640D53A65274B88056B /* MKNetworkKit.h */,
+				12D1DC9D4CA954BA0718E2941297C27B /* MKNetworkOperation.h */,
+				B93DB7E2DAFD855DE8F0B4847DE3099D /* MKNetworkOperation.m */,
+				FABD0A90B920248DFB6CCA81DC6796D1 /* NSData+MKBase64.h */,
+				9F2421AF87B1188AB75BA236E6712FBF /* NSData+MKBase64.m */,
+				03C1260632C97A3243D388DBEC614127 /* NSDate+RFC1123.h */,
+				3301BB9AB22835A0370AB539F359B38B /* NSDate+RFC1123.m */,
+				236D07274085218A9B84183ACCB99ABC /* NSDictionary+RequestEncoding.h */,
+				974E3B237EA2FA4219EE8ED96EBBD8DD /* NSDictionary+RequestEncoding.m */,
+				A3260AE629920413BE58B6B10485CF57 /* NSString+MKNetworkKitAdditions.h */,
+				BF1525C44246515F0B7D161153560A61 /* NSString+MKNetworkKitAdditions.m */,
+				0D4D1AF73410E522C9F30D638222D1F1 /* UIAlertView+MKNetworkKitAdditions.h */,
+				4F2FB00AF0F0B4B8DBFBB6C6366E2418 /* UIAlertView+MKNetworkKitAdditions.m */,
+				0F7EF37882AB0FD26B8872B35D136093 /* Support Files */,
+			);
+			path = MKNetworkKit;
+			sourceTree = "<group>";
+		};
+		2E50199F106FE9A5DE7040E1BB5A1DE1 /* Pods-DGMKNetworkKit */ = {
+			isa = PBXGroup;
+			children = (
+				A1416A7D37574CA6D019DDD904B02619 /* Pods-DGMKNetworkKit-acknowledgements.markdown */,
+				68677442C397A413DB8B27E6DC4B1814 /* Pods-DGMKNetworkKit-acknowledgements.plist */,
+				4418082FE5C52A228916A3FB29EAA20E /* Pods-DGMKNetworkKit-dummy.m */,
+				4FEFC97377867F5C341772426A08539E /* Pods-DGMKNetworkKit-resources.sh */,
+				9BD78563B28BC1F69F8309E9C10621C9 /* Pods-DGMKNetworkKit.debug.xcconfig */,
+				09E39F9AF89A30C2B3CF2AAF91F90CA1 /* Pods-DGMKNetworkKit.release.xcconfig */,
+			);
+			name = "Pods-DGMKNetworkKit";
+			path = "Target Support Files/Pods-DGMKNetworkKit";
+			sourceTree = "<group>";
+		};
+		3BFA827792B1D4E871C2110A04F9D75A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E50199F106FE9A5DE7040E1BB5A1DE1 /* Pods-DGMKNetworkKit */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				C54A6050B3C5E9918CF73918DB40DEBA /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				3BFA827792B1D4E871C2110A04F9D75A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		987E24817FCDF6CD6A23E6CD7D9DB2CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F89A78BFEF564216FB652BA4B907F7E0 /* Reachability.xcconfig */,
+				F84957CEB839129E88D58047A4CF16C3 /* Reachability-Private.xcconfig */,
+				3DB0B3DE9DB7BBEA1465951F46F5D8C6 /* Reachability-dummy.m */,
+				4C569FE8289A1400A6476A239CF2C802 /* Reachability-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Reachability";
+			sourceTree = "<group>";
+		};
+		99999E6D879219182D479415EB35D637 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				F136FD8C750979A98D6312CE8ECA1506 /* Reachability.h */,
+				D105E87B7F42CFB9B84AB2A345512AD7 /* Reachability.m */,
+				987E24817FCDF6CD6A23E6CD7D9DB2CC /* Support Files */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		C54A6050B3C5E9918CF73918DB40DEBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27F23FFDCC4A4A06E7C44915267ABA4E /* MKNetworkKit */,
+				99999E6D879219182D479415EB35D637 /* Reachability */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DEC7319F57AA8851AD844925E1AF591 /* libMKNetworkKit.a */,
+				47AA38904B6CA6BEAA9A05257CDA06F0 /* libPods-DGMKNetworkKit.a */,
+				6569601CFF094BF7A8C021D1F9AE8FDB /* libReachability.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3F965ECCBF10B69E9313EF2EA1CC3F7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D714A09E6CE470618E6D23FAFFB2AA33 /* CFNetwork.framework */,
+				3811A1ECE30883476F114E42572826EF /* Foundation.framework */,
+				F576E5742E43A9CCB8A5388D66D38E91 /* Security.framework */,
+				F30DA52C60D8B42F372B933D296828FD /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E8AFFEC7E1D399137649154652B4B014 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9930C7DDAD17C7F56DDFCAC316F89E3C /* Reachability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEECFA6AABAC9530D53C71CBFCDCCA3B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02DD2238761CE94A3F5936C2E14A7F74 /* MKNetworkEngine.h in Headers */,
+				10E9A875D8267B54CC15F93A5A46B242 /* MKNetworkKit.h in Headers */,
+				1A7D83B15F6DC0EF9D8A4680FF700D1C /* MKNetworkOperation.h in Headers */,
+				82333542ED1C871EC3AFDC346F92D0D4 /* NSData+MKBase64.h in Headers */,
+				8D647B9F4ED7669474FF8F0723001C05 /* NSDate+RFC1123.h in Headers */,
+				C3ADC4D4489440F909BEA64E31708575 /* NSDictionary+RequestEncoding.h in Headers */,
+				8D8EE35CE9618B3E0619DC87E4E3FE6A /* NSString+MKNetworkKitAdditions.h in Headers */,
+				CBF6AA520AD688C10F7DC2F68AD5EC93 /* UIAlertView+MKNetworkKitAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1893DE70459B9C5430E1E53597BF9817 /* Reachability */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7308906685EEDEACADE55318549938F7 /* Build configuration list for PBXNativeTarget "Reachability" */;
+			buildPhases = (
+				9D8D6CC17061440D5ACB4B09F43B45F3 /* Sources */,
+				91E7163BC7B028C8D2732B25DB0E0182 /* Frameworks */,
+				E8AFFEC7E1D399137649154652B4B014 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Reachability;
+			productName = Reachability;
+			productReference = 6569601CFF094BF7A8C021D1F9AE8FDB /* libReachability.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2E23D12799CD9B249ACC2D375B90D499 /* MKNetworkKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE91F8B2735415BDCE72BE12ACBDD0AC /* Build configuration list for PBXNativeTarget "MKNetworkKit" */;
+			buildPhases = (
+				DA8DBA2A51428F27E7DB26E6062BC650 /* Sources */,
+				58B3F7324AFAD05B7FADA4010404C89F /* Frameworks */,
+				EEECFA6AABAC9530D53C71CBFCDCCA3B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4599E28B9F5AD3B0676A0A47C03FAAA7 /* PBXTargetDependency */,
+			);
+			name = MKNetworkKit;
+			productName = MKNetworkKit;
+			productReference = 2DEC7319F57AA8851AD844925E1AF591 /* libMKNetworkKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E0314D2BD0ED929BA2D54F7791C0985B /* Pods-DGMKNetworkKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26D72871803F895F215B02DD6E3892C4 /* Build configuration list for PBXNativeTarget "Pods-DGMKNetworkKit" */;
+			buildPhases = (
+				92F087733F8682592067149CD6FC79AB /* Sources */,
+				289E6C4B2B259C85F1B1444694F3DC49 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8D9697221E3EC667F84D826B2365010 /* PBXTargetDependency */,
+				FBA2D699B7D5C9DF39932F19FE297E24 /* PBXTargetDependency */,
+			);
+			name = "Pods-DGMKNetworkKit";
+			productName = "Pods-DGMKNetworkKit";
+			productReference = 47AA38904B6CA6BEAA9A05257CDA06F0 /* libPods-DGMKNetworkKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E23D12799CD9B249ACC2D375B90D499 /* MKNetworkKit */,
+				E0314D2BD0ED929BA2D54F7791C0985B /* Pods-DGMKNetworkKit */,
+				1893DE70459B9C5430E1E53597BF9817 /* Reachability */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92F087733F8682592067149CD6FC79AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4168C29CF242C64CFE3490357ADE3A /* Pods-DGMKNetworkKit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D8D6CC17061440D5ACB4B09F43B45F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD7B08129B062956EC09EF8DDB9D7FC2 /* Reachability-dummy.m in Sources */,
+				05F1E20DA9C5DA6C7CB248705A6D59F9 /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA8DBA2A51428F27E7DB26E6062BC650 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42B3F5CF5DC13B0770B20309720DAE7E /* MKNetworkEngine.m in Sources */,
+				7D1DBAA17405A1C291E3747AE7EDFC26 /* MKNetworkKit-dummy.m in Sources */,
+				480CCBD7F119A06ED496A18FAFAC4404 /* MKNetworkOperation.m in Sources */,
+				4EFC68CD07CC6C3D872174CC9BD1413B /* NSData+MKBase64.m in Sources */,
+				5866EEBD03F1CACACE198F202F9294BB /* NSDate+RFC1123.m in Sources */,
+				9E0C0EF5CC6039A7C2CCB248B7CE42D0 /* NSDictionary+RequestEncoding.m in Sources */,
+				59135DEF256440544658AE620A2051F8 /* NSString+MKNetworkKitAdditions.m in Sources */,
+				FA56DF6BF54D4D5B71CE19673E5DF91C /* UIAlertView+MKNetworkKitAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4599E28B9F5AD3B0676A0A47C03FAAA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reachability;
+			target = 1893DE70459B9C5430E1E53597BF9817 /* Reachability */;
+			targetProxy = F7F14E32CA020F4BA168C948C9E84FFE /* PBXContainerItemProxy */;
+		};
+		F8D9697221E3EC667F84D826B2365010 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MKNetworkKit;
+			target = 2E23D12799CD9B249ACC2D375B90D499 /* MKNetworkKit */;
+			targetProxy = AEB19AE8E57BC96E2238C3C14D7294AC /* PBXContainerItemProxy */;
+		};
+		FBA2D699B7D5C9DF39932F19FE297E24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reachability;
+			target = 1893DE70459B9C5430E1E53597BF9817 /* Reachability */;
+			targetProxy = 0E34B07ADDA4FCB5185AD18FAAB8EC57 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		052A17875CB827423D627183396CEB60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		297DE8A4B165F15F540E8C40B1C0A28C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09E39F9AF89A30C2B3CF2AAF91F90CA1 /* Pods-DGMKNetworkKit.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		682E83256C6225E89F620D2F1827AB8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2E689BA53FB9059BF9E6B63ADAB7DA6 /* MKNetworkKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MKNetworkKit/MKNetworkKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		852B61FBFE225AABAFB4ED3F73E1969E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2E689BA53FB9059BF9E6B63ADAB7DA6 /* MKNetworkKit-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MKNetworkKit/MKNetworkKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		99DB3D034457AE836640D4C2BF239900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BD78563B28BC1F69F8309E9C10621C9 /* Pods-DGMKNetworkKit.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E828CAB995B0F5009AFCF614EC1DD8CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84957CEB839129E88D58047A4CF16C3 /* Reachability-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Reachability/Reachability-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FB9879E8F483A2177A13C1D1C464FB85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84957CEB839129E88D58047A4CF16C3 /* Reachability-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Reachability/Reachability-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26D72871803F895F215B02DD6E3892C4 /* Build configuration list for PBXNativeTarget "Pods-DGMKNetworkKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99DB3D034457AE836640D4C2BF239900 /* Debug */,
+				297DE8A4B165F15F540E8C40B1C0A28C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */,
+				052A17875CB827423D627183396CEB60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7308906685EEDEACADE55318549938F7 /* Build configuration list for PBXNativeTarget "Reachability" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB9879E8F483A2177A13C1D1C464FB85 /* Debug */,
+				E828CAB995B0F5009AFCF614EC1DD8CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE91F8B2735415BDCE72BE12ACBDD0AC /* Build configuration list for PBXNativeTarget "MKNetworkKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				682E83256C6225E89F620D2F1827AB8C /* Debug */,
+				852B61FBFE225AABAFB4ED3F73E1969E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
